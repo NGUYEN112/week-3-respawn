@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <input type="text" id="text">
     <button id="search" onclick="search()">Tìm kiếm</button>
     <script>
-        var a = ["Reckless","Quick Feet","Adaptability","the second hieu"];
-        var b = ["Liều lĩnh","Nhanh chân","Thích ứng","Hieu thu 2"];
+        var a = ["Reckless", "Quick Feet", "Adaptability", "the second hieu"];
+        var b = ["Liều lĩnh", "Nhanh chân", "Thích ứng", "Hieu thu 2"];
         function search() {
-        var text = (document.getElementById('text').value);
-        for (let x= 0;  x < a.length; x++){
-            if(a[x]== text) {
-                alert(b[x]);
-                break;
+            var text = (document.getElementById('text').value);
+            for (x = 0; x < a.length; x++) {
+                if (a[x] == text) {
+                    alert(b[x]);
+                    return;
+                }
             }
             alert('khong co tu nay!');
-            break;
-        }
         }
     </script>
 </body>
+
 </html>
